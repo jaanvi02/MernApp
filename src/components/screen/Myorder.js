@@ -8,7 +8,7 @@ export default function Myorder() {
 
   const fetchMyOrder = async () => {
       console.log(localStorage.getItem('userEmail'))
-      await fetch("http://localhost:3000/api/myOrderData", {
+      await fetch("http://deploy-mern-api-alpha.vercel.app/myOrderData", {
           // credentials: 'include',
           // Origin:"http://localhost:3000/login",
           method: 'POST',
