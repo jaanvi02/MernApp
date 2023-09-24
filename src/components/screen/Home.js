@@ -10,7 +10,8 @@ export default function Home() {
   const [fooditem, setfooditem] = useState([]);
 
   const loaddata = async () => {
-    let response = await fetch("http://localhost:3000/api/fooddata", {
+    let response = await fetch("http://deploy-mern-api-alpha.vercel.app
+/fooddata", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
